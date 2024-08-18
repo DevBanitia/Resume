@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+
+<body class="resume-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top" style="background-color: #f8f9fa;">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <img src="{% static 'img/sitename.png' %}" alt="Site Logo" style="width: 120px; height: auto;">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/home" >Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/resume"class="active">Resume</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+<!--        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+        <a href="https://linkedin.com/in/dev-banitia" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>“If you want to shine like a sun, first burn like a sun.”</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Dev Banitia</h4>
+              <p><em>Expert in fluid mechanics with a strong background in single-phase and two-phase flows, and advanced CFD simulations. Adept at solving complex problems and driving innovation through hands-on research and analysis.</em></p>
+              <ul>
+                <li>Haryana, India</li>
+                <li>+91 94991 84473</li>
+                <li>2022uch0046@iitjammu.ac.in</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>B.Tech in Chemical Engineering</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Indian Institute of Technology, Jammu</em></p>
+            </div><!-- Edn Resume Item -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Research Intern</h4>
+              <h5>May, 2024 - June, 2024</h5>
+              <p><em>Indian Institute of Technology, Bombay </em></p>
+              <ul>
+                  <li><b>Experimental and Numerical Analysis of Nucleate Pool Swelling</b></li>
+                <li>Conducted experimental analysis of pool swell behavior. </li>
+                <li>Numerically predicted experimental outcomes using a multiphase VOF model with 2D and 3D CFD simulations.</li>
+                <li>Developed a predictive correlation for the swell and collapse levels of the pool.</li>
+                  <li>Investigated flow behavior by altering rod bundle configurations.</li>
+                  <li><b>Experimental and Computational Analysis of Natural Convection Based Cooling of Suspended Surfaces</b></li>
+                  <li>Performed Fast Fourier Transform (FFT) to analyze experimental results.</li>
+                  <li>Contributed to numerical predictions using Ansys Fluent.</li>
+                  <li>Assisted in conducting literature review for paper writing.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Research Intern</h4>
+              <h5>June, 2023 - July, 2023</h5>
+              <p><em>Indian Institute of Technology, Jammu</em></p>
+              <ul>
+                <li><b>Solar Chulha CSP Design - Innovations for Efficient Indoor Solar Cooking</b></li>
+                <li>Spearheaded research on CSP system design, specializing in the innovative Beam-down concept.</li>
+                <li>Led design and simulation processes to enhance operational efficiency using TracePro Software</li>
+                <li>Applied advanced ray tracing techniques based on the Monte-Carlo method to optimize performance and mitigate
+optical errors in CSP systems.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background" style="background-color: #f8f9fa;>
+
+<footer id="footer" class="footer light-background" style="background-color: #f8f9fa; padding: 20px; border-top: 1px solid #e0e0e0;">
+  <div class="container">
+    <div class="copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Dev</strong> <span>All Rights Reserved</span></p>
+    </div>
+    <div class="social-links d-flex justify-content-center">
+      <a href="https://www.linkedin.com/in/dev-banitia" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+    </div>
+    <div class="developed-by text-center" style="margin-top: 20px;">
+      <p style="margin: 0;">Developed by <a href="https://www.linkedin.com/in/supriyo116/" target="_blank" rel="noopener noreferrer" style="color: #007bff; text-decoration: none;">Supriyo</a></p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+{% endblock body %}
